@@ -1,0 +1,15 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = jan_mayenese
+religion = bear_pagan_reformed
+technology_group = western
+capital = 4942 #Jan Mayen
+
+1444.11.11 = {
+	monarch = {
+		name = "Lars"
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}

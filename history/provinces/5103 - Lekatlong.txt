@@ -1,0 +1,13 @@
+owner = TSW
+controller = TSW
+add_core = TSW
+culture = khoisan
+religion = shamanism #Fetishism
+capital = "Lekatlong"
+is_city = yes
+trade_goods = livestock
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+discovered_by = central_african

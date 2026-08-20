@@ -1,0 +1,94 @@
+jmn_build_up_jan_mayen = {
+	local_development_cost = -0.35
+	local_development_cost_modifier = -0.1
+}
+
+jmn_build_up_jan_mayen2 = {
+	local_development_cost = -0.45
+	local_development_cost_modifier = -0.2
+}
+
+jmn_build_up_jan_mayen3 = {
+	local_development_cost = -0.50
+	local_development_cost_modifier = -0.3
+}
+
+jmn_build_up_jan_mayen4 = {
+	local_development_cost = -0.60
+	local_development_cost_modifier = -0.4
+}
+
+jmn_build_up_jan_mayen5 = {
+	local_development_cost = -0.80
+	local_development_cost_modifier = -0.5
+}
+jmn_build_up_jan_mayen6 = {
+	local_development_cost = -1.00
+	local_development_cost_modifier = -0.6
+}
+
+jmn_incomeboost = {
+	global_tax_income = 120
+}
+
+jmn_dev_reward1 = {
+	discipline = 0.01
+	land_morale = 0.1
+}
+jmn_dev_reward2 = {
+	discipline = 0.01
+}
+jmn_culture = {
+	culture_conversion_cost = -0.9
+	culture_conversion_time = -0.5
+}
+jmn_culture2 = {
+	culture_conversion_cost = -0.5
+	culture_conversion_time = -0.4
+}
+jmn_war_toratoratora = {
+	heavy_ship_power = 0.5
+	naval_morale = 0.5
+}
+jmn_mann_reward = {
+	heavy_ship_power = 0.05
+}
+jmn_bermuda_reward = {
+	heavy_ship_power = 0.05
+}
+jmn_falklands_reward = {
+	global_naval_engagement_modifier = 0.05
+}
+jmn_suqutra_reward = {
+	global_naval_engagement_modifier = 0.05
+}
+jmn_malta_reward = {
+	naval_morale = 0.1
+}
+jmn_maldives_reward = {
+	ship_durability = 0.025
+}
+jmn_galapagos_reward = {
+	ship_durability = 0.025
+}
+jmn_belitung_reward = {
+	heavy_ship_power = 0.05
+}
+jmn_jeju_reward = {
+	naval_maintenance_modifier = -0.10
+}
+jmn_wake_reward = {
+	global_ship_cost = -0.1
+}
+jmn_gb_conquest_ireland = {
+	infantry_power = 0.025
+}
+jmn_gb_conquest_scotland = {
+	infantry_power = 0.025
+}
+jmn_gb_conquest_england = {
+	infantry_power = 0.05
+}
+jmn_gb_conquest_Britain = {
+	infantry_power = 0.05
+}

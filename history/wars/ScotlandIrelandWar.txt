@@ -1,0 +1,22 @@
+name = "Scottish-Irish War"
+war_goal = {
+	type = superiority_punitive
+	casus_belli = cb_super_badboy
+}
+
+1440.1.1 = {
+	add_attacker = ULS
+	add_attacker = TRY
+	add_attacker = TYR
+	add_attacker = LEI
+	add_defender = SCO
+}
+
+#Peace and end of war
+1444.10.10 = {
+	rem_attacker = ULS
+	rem_attacker = TRY
+	rem_attacker = TYR
+	rem_attacker = LEI
+	rem_defender = SCO
+}

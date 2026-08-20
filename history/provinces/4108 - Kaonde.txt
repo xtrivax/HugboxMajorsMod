@@ -1,0 +1,19 @@
+#4108 Kaonde
+
+latent_trade_goods = {
+	coal
+}
+
+owner = BEM
+controller = BEM
+add_core = BEM
+culture = bemba
+religion = shamanism #Fetishism
+trade_goods = livestock
+capital = "Kaonde"
+is_city = yes
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+discovered_by = central_african

@@ -1,0 +1,16 @@
+merc_local_all_female_company = {
+	regiments_per_development = 1
+	cost_modifier = 1
+	cavalry_weight = 0.2
+	artillery_weight = 0.1
+	cavalry_cap = 4
+	trigger = {
+		has_country_flag = female_mercs
+		is_allowed_to_recruit_mercenaries = yes
+	}
+	modifier = {
+		cav_to_inf_ratio = 1
+		shock_damage_received = 0.05
+		land_morale = 0.05
+	}
+}

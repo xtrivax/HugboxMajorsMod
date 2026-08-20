@@ -1,0 +1,172 @@
+sea_benin_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = BEN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	ben_expand_coast = {
+		icon = mission_son_back_to_the_roots
+		provinces_to_highlight = {
+			OR = {
+				area = lower_niger_area
+				area = gulf_of_guinea_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			lower_niger_area = {
+				type = all
+				owned_by = ROOT
+			}
+			gulf_of_guinea_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			west_africa_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			adamawa_plateau_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mbam_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tandjile_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			gabon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sangha_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			manjia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bateke_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 1000
+		}
+	}
+	ben_trade_kingdom = {
+		icon = mission_mal_riches_of_trade
+		required_missions = { ben_expand_coast }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					NOT = { is_strongest_trade_power = ROOT }
+					province_id = 1464
+				}
+				AND = {
+					NOT = { is_strongest_trade_power = ROOT }
+					province_id = 5014
+				}
+				AND = {
+					NOT = { is_strongest_trade_power = ROOT }
+					province_id = 4097
+				}
+			}
+		}
+		trigger = {
+			1464 = {
+				is_strongest_trade_power = ROOT
+			}
+			5014 = {
+				is_strongest_trade_power = ROOT
+			}
+			4097 = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = ben_trade_kingdom_modifier
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 1000
+		}
+	}
+	ben_trade_empire = {
+		icon = mission_kon_protector_of_africa
+		required_missions = { ben_trade_kingdom }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					NOT = { is_strongest_trade_power = ROOT }
+					province_id = 1132
+				}
+				AND = {
+					NOT = { is_strongest_trade_power = ROOT }
+					province_id = 1149
+				}
+				AND = {
+					NOT = { is_strongest_trade_power = ROOT }
+					province_id = 1460
+				}
+			}
+		}
+		trigger = {
+			1132 = {
+				is_strongest_trade_power = ROOT
+			}
+			1149 = {
+				is_strongest_trade_power = ROOT
+			}
+			1460 = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = ben_trade_empire_modifier
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 1000
+		}
+	}
+}

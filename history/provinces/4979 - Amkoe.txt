@@ -1,0 +1,13 @@
+owner = KLG
+controller = KLG
+add_core = KLG
+culture = khoisan
+religion = shamanism #Fetishism
+trade_goods = wool
+capital = "Amkoe"
+is_city = yes
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+discovered_by = central_african

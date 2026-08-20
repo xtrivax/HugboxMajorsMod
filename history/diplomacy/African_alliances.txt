@@ -1,0 +1,30 @@
+vassal = {
+	first = MRE
+	second = MJE
+	start_date = 1444.1.1
+	end_date = 1650.1.1
+}
+vassal = {
+	first = MRA
+	second = LDU
+	start_date = 1444.1.1
+	end_date = 1572.1.1
+}
+vassal = {
+	first = AJU
+	second = MDI
+	start_date = 1444.1.1
+	end_date = 1615.1.1
+}
+vassal = {
+	first = KON
+	second = NDO
+	start_date = 1444.1.1
+	end_date = 1556.1.1
+}
+vassal = {
+	first = ADA
+	second = HDY
+	start_date = 1444.1.1
+	end_date = 1534.1.1
+}

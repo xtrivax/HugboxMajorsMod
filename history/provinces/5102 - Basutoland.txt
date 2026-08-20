@@ -1,0 +1,16 @@
+owner = SOT
+controller = SOT
+add_core = SOT
+culture = nguni
+religion = shamanism #Fetishism
+capital = "Basutoland"
+is_city = yes
+trade_goods = grain
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 2
+discovered_by = central_african
+
+1750.1.1 = { discovered_by = NED }
+

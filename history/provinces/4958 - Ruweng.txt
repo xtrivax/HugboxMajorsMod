@@ -1,0 +1,30 @@
+# Ruweng
+
+culture = fur_culture
+religion = shamanism #Fetishism
+capital = "Ruweng"
+native_size = 50
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_ferocity = 3
+native_hostileness = 8
+
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman
+1444.1.1 = {
+	owner = TGL
+	controller = TGL
+	add_core = TGL
+	discovered_by = NUB
+	is_city = yes
+	discovered_by = ETH
+	trade_goods = slaves
+}
+discovered_by = ALO
+discovered_by = MAK
+discovered_by = WAD
+discovered_by = DAJ

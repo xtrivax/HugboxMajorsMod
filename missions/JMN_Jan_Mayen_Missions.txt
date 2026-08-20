@@ -1,0 +1,2323 @@
+JMN_mission_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = JMN
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	JMN_build_up_island_1 = {
+		icon = mission_japanese_samurai
+		position = 2
+		required_missions = { JMN_build_up_1 } 
+		trigger = {
+			AND = {
+				owns_core_province = 371
+				371 = {
+				development = 10
+				}
+			}
+		}
+		effect = {
+			370 = {
+				cede_province = JMN
+				add_core = JMN
+				hidden_effect = {
+					remove_core = NOR
+				}
+			}
+		}
+	}
+
+	JMN_build_up_island_6 = {
+		icon = mission_japanese_samurai
+		position = 4
+		required_missions = { JMN_build_up_island_1 } 
+		trigger = {
+			AND = {
+				owns_core_province = 370
+				370 = {
+				religion = bear_pagan_reformed
+				development = 10
+				}
+			}
+		}
+		effect = {
+			370 = {
+				add_province_modifier = {
+					name = "jmn_culture"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1
+				}				
+			}
+		}
+	}
+	JMN_build_up_island_10 = {
+		icon = mission_japanese_samurai
+		position = 6
+		required_missions = { JMN_build_up_island_6 } 
+		trigger = {
+			AND = {
+				owns_core_province = 370
+				370 = {
+				religion = bear_pagan_reformed
+				development = 25
+				}
+			}
+		}
+		effect = {
+			370 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen3"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+				}
+			}
+		}
+	}
+
+	JMN_build_up_navy_1 = {
+		icon = mission_launch_a_flagship
+		position = 8
+		required_missions = { JMN_build_up_island_10 } 
+		trigger = {
+			AND = {
+				navy_size = 30
+				num_of_heavy_ship = 10
+				navy_tradition = 50
+				has_flagship = yes
+			}
+		}
+		effect = {
+			370 = {
+				add_building = grand_shipyard 
+			}
+			371 = {
+				add_building = grand_shipyard 
+			}
+			1978 = {
+				add_building = grand_shipyard 
+			}
+			1979 = {
+				add_building = grand_shipyard 
+			}
+
+		}
+	}
+
+	JMN_build_up_navy_2 = {
+		icon = mission_launch_a_flagship
+		position = 9
+		required_missions = { JMN_build_up_navy_1 } 
+		trigger = {
+			at_war_with_religious_enemy = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = "jmn_war_toratoratora"
+				duration = 90
+			}
+		}
+	}
+	JMN_gb_conquest_2 = {
+		icon = mission_japanese_samurai
+		position = 10
+		required_missions = { JMN_gb_conquest_1 } 
+		trigger = {
+			AND = {
+				highlands_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					development = 5
+				}
+				lowlands_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					development = 5
+				}
+				kingdom_of_the_isles_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					development = 5
+				}
+			}
+		}		
+		effect = {
+			highlands_area = {
+					add_province_modifier = {
+					name = jmn_build_up_jan_mayen
+					duration = -1 
+				}
+					add_province_modifier = {
+					name = jmn_culture2
+					duration = -1 
+				}
+			}
+			lowlands_area = {
+					add_province_modifier = {
+					name = jmn_build_up_jan_mayen
+					duration = -1 
+				}
+					add_province_modifier = {
+					name = jmn_culture2
+					duration = -1 
+				}
+			}
+			kingdom_of_the_isles_area = {
+					add_province_modifier = {
+					name = jmn_build_up_jan_mayen
+					duration = -1 
+				}
+					add_province_modifier = {
+					name = jmn_culture2
+					duration = -1 
+				}
+			}
+		}
+	}
+
+	JMN_gb_conquest_5 = {
+		icon = mission_japanese_samurai
+		position = 11
+		required_missions = { JMN_gb_conquest_2 } 
+		trigger = {
+			AND = {
+				highlands_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 25
+				}
+				lowlands_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 25
+				}
+				kingdom_of_the_isles_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 25
+				}
+			}
+		}		
+		effect = {
+			highlands_area = {
+					add_province_modifier = {
+					name = jmn_build_up_jan_mayen3
+					duration = -1 
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+					remove_province_modifier = jmn_culture2
+				}
+			}
+			lowlands_area = {
+					add_province_modifier = {
+					name = jmn_build_up_jan_mayen3
+					duration = -1 
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+					remove_province_modifier = jmn_culture2
+				}
+			}
+			kingdom_of_the_isles_area = {
+					add_province_modifier = {
+					name = jmn_build_up_jan_mayen3
+					duration = -1 
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+					remove_province_modifier = jmn_culture2
+				}
+			}
+		}
+	}
+	JMN_gb_conquest_8 = {
+        icon = mission_japanese_samurai
+        position = 12
+        required_missions = { JMN_gb_conquest_5 } 
+        trigger = {
+            AND = {
+                highlands_area = {
+                    type = all
+                    owned_by = ROOT
+                    religion = ROOT
+                    culture = ROOT
+                    development = 35
+                }
+                lowlands_area = {
+                    type = all
+                    owned_by = ROOT
+                    religion = ROOT
+                    culture = ROOT
+                    development = 35
+                }
+                kingdom_of_the_isles_area = {
+                    type = all
+                    owned_by = ROOT
+                    religion = ROOT
+                    culture = ROOT
+                    development = 35
+                }
+            }
+        }        
+        effect = {
+            add_country_modifier = {
+                name = "jmn_gb_conquest_scotland"
+                duration = -1
+            }
+        }
+    }
+}	
+
+
+JMN_mission_slot_2= {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = JMN
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	JMN_build_up_island_2 = {
+		icon = mission_japanese_samurai
+		position = 2
+		required_missions = { JMN_build_up_1 } 
+		trigger = {
+			AND = {
+				owns_core_province = 1979
+				1979 = {
+				development = 10
+				}
+			}
+		}
+		effect = {
+			371 = {
+				cede_province = JMN
+				add_core = JMN
+				hidden_effect = {
+					remove_core = NOR
+				}
+			}
+		}
+	}
+
+	JMN_build_up_island_7 = {
+		icon = mission_japanese_samurai
+		position = 4
+		required_missions = { JMN_build_up_island_2 } 
+		trigger = {
+			AND = {
+				owns_core_province = 371
+				371 = {
+				religion = bear_pagan_reformed
+				development = 10
+				}
+			}
+		}
+		effect = {
+			371 = {
+				add_province_modifier = {
+					name = "jmn_culture"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1
+				}				
+			}
+		}
+	}
+	JMN_build_up_island_11 = {
+		icon = mission_japanese_samurai
+		position = 6
+		required_missions = { JMN_build_up_island_7 } 
+		trigger = {
+			AND = {
+				owns_core_province = 371
+				371 = {
+				religion = bear_pagan_reformed
+				development = 25
+				}
+			}
+		}
+		effect = {
+			371 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen3"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+				}
+			}
+		}
+	}
+	JMN_gb_conquest_1 = {
+		icon = mission_japanese_samurai
+		position = 9
+		required_missions = { JMN_bears_production_1 } 
+		trigger = {
+			AND = {
+				navy_size = 20
+				army_size = 20
+				army_size_percentage = 0.95	
+			}
+		}
+		effect = {
+			british_isles_region = {
+				limit = { 
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+		}
+	}
+	
+	JMN_gb_conquest_3 = {
+		icon = mission_japanese_samurai
+		position = 10
+		required_missions = { JMN_gb_conquest_1 } 
+		trigger = {
+			AND = {
+				munster_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					development = 5
+				}
+				connacht_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					development = 5
+				}
+				leinster_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					development = 5
+				}
+				ulster_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					development = 5
+				}
+			}
+		}		
+		effect = {
+			munster_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1 
+				}
+					add_province_modifier = {
+					name = "jmn_culture2"
+					duration = -1 
+				}
+			}
+			connacht_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1 
+				}
+					add_province_modifier = {
+					name = "jmn_culture2"
+					duration = -1 
+				}
+			}
+			leinster_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1 
+				}
+					add_province_modifier = {
+					name = "jmn_culture2"
+					duration = -1 
+				}
+			}
+			ulster_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1 
+				}
+					add_province_modifier = {
+					name = "jmn_culture2"
+					duration = -1 
+				}
+			}
+		}
+	}
+	JMN_gb_conquest_6 = {
+		icon = mission_japanese_samurai
+		position = 11
+		required_missions = { JMN_gb_conquest_3 } 
+		trigger = {
+			AND = {
+				munster_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 25
+				}
+				connacht_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 25
+				}
+				leinster_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 25
+				}
+				ulster_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 25
+				}
+			}
+		}		
+		effect = {
+			munster_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen3"
+					duration = -1 
+				}
+				hidden_effect = {
+					remove_province_modifier = "jmn_build_up_jan_mayen"
+					remove_province_modifier = "jmn_culture2"
+				}
+			}
+			connacht_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen3"
+					duration = -1 
+				}
+			hidden_effect = {
+					remove_province_modifier = "jmn_build_up_jan_mayen"
+					remove_province_modifier = "jmn_culture2"
+				}
+			}
+			leinster_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen3"
+					duration = -1 
+				}
+				hidden_effect = {
+					remove_province_modifier = "jmn_build_up_jan_mayen"
+					remove_province_modifier = "jmn_culture2"
+				}
+			}
+			ulster_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen3"
+					duration = -1 
+				}
+				hidden_effect = {
+					remove_province_modifier = "jmn_build_up_jan_mayen"
+					remove_province_modifier = "jmn_culture2"
+				}
+			}
+		}
+	}
+	JMN_gb_conquest_9 = {
+		icon = mission_japanese_samurai
+		position = 12
+		required_missions = { JMN_gb_conquest_6 } 
+		trigger = {
+			AND = {
+				munster_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 35
+				}
+				connacht_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 35
+				}
+				leinster_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 35
+				}
+				ulster_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 35
+				}
+			}
+		}		
+		effect = {
+			add_country_modifier = {
+				name = "jmn_gb_conquest_ireland"
+				duration = -1 
+			}
+		}
+	}
+
+	JMN_gb_conquest_11 = {
+		icon = mission_japanese_samurai
+		position = 13
+		required_missions = { JMN_gb_conquest_8 JMN_gb_conquest_9 JMN_gb_conquest_10} 
+		trigger = {
+			british_isles_region = {
+				type = all
+				owned_by = ROOT
+				religion = ROOT
+				culutre = ROOT
+				development = 50
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "jmn_gb_conquest_Britain"
+				duration = -1 
+			}
+		}
+	}
+}
+
+
+JMN_mission_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = JMN
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	JMN_build_up_1 = {
+		icon = mission_japanese_samurai
+		position = 1
+		required_missions = {  } 
+		trigger = {
+			AND = {
+				owns_core_province = 5790
+				5790 = {
+				development = 10
+				}
+			}
+		}
+		effect = {
+			5790 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = "jmn_incomeboost"
+				duration = -1
+			}
+		}
+	}
+
+	JMN_build_up_2 = {
+		icon = mission_japanese_samurai
+		position = 2
+		required_missions = { JMN_build_up_1 } 
+		trigger = {
+			AND = {
+				owns_core_province = 5790
+				5790 = {
+				development = 15
+				}
+			}
+		}
+		effect = {
+			5790 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen2"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+				}
+				center_of_trade = 3
+			}
+		}
+	}
+
+	JMN_build_up_3 = {
+		icon = mission_japanese_samurai
+		position = 2
+		required_missions = { JMN_build_up_2 } 
+		trigger = {
+			AND = {
+				owns_core_province = 5790
+				5790 = {
+				development = 20
+				}
+			}
+		}
+		effect = {
+			5790 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen3"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen2
+				}
+			}
+		}
+	}
+
+	JMN_build_up_4 = {
+		icon = mission_japanese_samurai
+		position = 3
+		required_missions = { JMN_build_up_3 } 
+		trigger = {
+			AND = {
+				owns_core_province = 5790
+				5790 = {
+				development = 30
+				}
+			}
+		}
+		effect = {
+			5790 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen4"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen3
+				}
+			}
+		}
+	}
+
+	JMN_build_up_5 = {
+		icon = mission_japanese_samurai
+		position = 4
+		required_missions = { JMN_build_up_4 } 
+		trigger = {
+			AND = {
+				owns_core_province = 5790
+				5790 = {
+				development = 40
+				}
+			}
+		}
+		effect = {
+			5790 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen5"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen4
+				}
+			}
+		}
+	}
+	
+
+	JMN_build_up_6 = {
+		icon = mission_japanese_samurai
+		position = 5
+		required_missions = { JMN_build_up_5 } 
+		trigger = {
+			AND = {
+				owns_core_province = 5790
+				5790 = {
+				development = 50
+				culture = jan_mayenese
+				}
+			}
+		}
+		effect = {
+			5790 = {
+				add_province_modifier = {
+					name = "jmn_dev_reward1"
+					duration = -1
+				}
+			}
+		}
+	}
+
+		JMN_build_up_island_3 = {
+		icon = mission_japanese_samurai
+		position = 6
+		required_missions = { JMN_build_up_6 JMN_build_up_island_10 JMN_build_up_island_11 JMN_build_up_island_12 JMN_build_up_island_13 } 
+		trigger = {
+			AND = {
+				owns_core_province = 371
+				371 = {
+				development = 50
+				culture = jan_mayenese
+				}
+
+				owns_core_province = 370
+				370 = {
+				development = 50
+				culture = jan_mayenese
+				}
+
+				owns_core_province = 1979
+				1979 = {
+				development = 50
+				culture = jan_mayenese
+				}
+
+				owns_core_province = 1978
+				1978 = {
+				development = 50
+				culture = jan_mayenese
+				}
+			}
+		}
+		effect = {
+			371 = {
+				add_province_modifier = {
+					name = "jmn_dev_reward2"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_culture
+				}
+			}
+		
+			370 = {
+				add_province_modifier = {
+					name = "jmn_dev_reward2"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_culture
+				}
+			}
+
+			1979 = {
+				add_province_modifier = {
+					name = "jmn_dev_reward2"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_culture
+				}
+			}
+
+			1978 = {
+				add_province_modifier = {
+					name = "jmn_dev_reward2"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_culture
+				}
+			}
+		}
+	}
+		JMN_bears_production_1 = {
+		icon = mission_japanese_samurai
+		position = 8
+		required_missions = { JMN_build_up_island_3 } 
+		trigger = {
+			AND = {
+				army_size = 15
+				owns_core_province = 5790
+				5790 = {
+				development = 55
+				culture = jan_mayenese
+				} 
+				owns_core_province = 371
+				371 = {
+				development = 55
+				culture = jan_mayenese
+				}
+
+				owns_core_province = 370
+				370 = {
+				development = 55
+				culture = jan_mayenese
+				}
+
+				owns_core_province = 1979
+				1979 = {
+				development = 55
+				culture = jan_mayenese
+				}
+
+				owns_core_province = 1978
+				1978 = {
+				development = 55
+				culture = jan_mayenese
+				}
+			}			
+		}
+		effect = {
+			5790 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen6"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen5
+				}
+			}
+					371 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen5"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen3
+				}
+			}
+		
+			370 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen5"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen3
+				}
+			}
+
+			1979 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen5"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen3
+				}
+			}
+
+			1978 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen5"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen3
+				}
+			}
+		}
+	}
+	JMN_bears_production_2 = {
+		icon = mission_japanese_samurai
+		position = 8
+		required_missions = { JMN_bears_production_1 } 
+		trigger = {
+			AND = {
+				army_size_percentage = 0.95
+				army_size = 30
+				owns_core_province = 5790
+				5790 = {
+				development = 69
+				culture = jan_mayenese
+				} 
+				owns_core_province = 371
+				371 = {
+				development = 69
+				culture = jan_mayenese
+				}
+
+				owns_core_province = 370
+				370 = {
+				development = 69
+				culture = jan_mayenese
+				}
+
+				owns_core_province = 1979
+				1979 = {
+				development = 69
+				culture = jan_mayenese
+				}
+
+				owns_core_province = 1978
+				1978 = {
+				development = 69
+				culture = jan_mayenese
+				}
+			}			
+		}
+		effect = {
+			5790 = {
+				change_trade_goods = bears
+			}
+			371 = {
+				change_trade_goods = bears
+			}
+			370 = {
+				change_trade_goods = bears
+			}
+			1979 = {
+				change_trade_goods = bears
+			}
+			1978 = {
+				change_trade_goods = bears
+			}
+		}
+	}
+
+	JMN_gb_conquest_4 = {
+		icon = mission_japanese_samurai
+		position = 10
+		required_missions = { JMN_gb_conquest_1 } 
+		trigger = {
+			AND = {
+				east_midlands_area = {
+					type = all
+					owned_by = ROOT
+					development = 5
+				}
+				west_midlands_area = {
+					type = all
+					owned_by = ROOT
+					development = 5
+				}
+				yorkshire_area = {
+					type = all
+					owned_by = ROOT
+					development = 5
+				}
+				scottish_marches_area = {
+					type = all
+					owned_by = ROOT
+					development = 5
+				}
+				wessex_area = {
+					type = all
+					owned_by = ROOT
+					development = 5
+				}
+				home_counties_area = {
+					type = all
+					owned_by = ROOT
+					development = 5
+				}
+				east_anglia_area = {
+					type = all
+					owned_by = ROOT
+					development = 5
+				}
+				wales_area = {
+					type = all
+					owned_by = ROOT
+					development = 5
+				}
+			}
+		}		
+		effect = {
+			east_midlands_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1 
+				}
+					add_province_modifier = {
+					name = "jmn_culture2"
+					duration = -1 
+				}
+			}
+			west_midlands_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1 
+				}
+					add_province_modifier = {
+					name = "jmn_culture2"
+					duration = -1 
+				}
+			}
+			yorkshire_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1 
+				}
+					add_province_modifier = {
+					name = "jmn_culture2"
+					duration = -1 
+				}
+			}
+			scottish_marches_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1 
+				}
+					add_province_modifier = {
+					name = "jmn_culture2"
+					duration = -1 
+				}
+			}
+			wessex_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1 
+				}
+					add_province_modifier = {
+					name = "jmn_culture2"
+					duration = -1 
+				}
+			}
+			home_counties_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1 
+				}
+					add_province_modifier = {
+					name = "jmn_culture2"
+					duration = -1 
+				}
+			}
+			east_anglia_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1 
+				}
+					add_province_modifier = {
+					name = "jmn_culture2"
+					duration = -1 
+				}
+			}
+			wales_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1 
+				}
+					add_province_modifier = {
+					name = "jmn_culture2"
+					duration = -1 
+				}
+			}
+		}
+	}
+	JMN_gb_conquest_7 = {
+		icon = mission_japanese_samurai
+		position = 11
+		required_missions = { JMN_gb_conquest_4 } 
+		trigger = {
+			AND = {
+				east_midlands_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 25
+				}
+				west_midlands_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 25
+				}
+				yorkshire_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 25
+				}
+				scottish_marches_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 25
+				}
+				wessex_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 25
+				}
+				home_counties_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 25
+				}
+				east_anglia_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 25
+				}
+				wales_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 25
+				}
+			}
+		}		
+		effect = {
+			east_midlands_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen3"
+					duration = -1 
+				}
+				hidden_effect = {
+					remove_province_modifier = "jmn_build_up_jan_mayen"
+					remove_province_modifier = "jmn_culture2"
+				}
+			}
+			west_midlands_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen3"
+					duration = -1 
+				}
+			hidden_effect = {
+					remove_province_modifier = "jmn_build_up_jan_mayen"
+					remove_province_modifier = "jmn_culture2"
+				}
+			}
+			yorkshire_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen3"
+					duration = -1 
+				}
+				hidden_effect = {
+					remove_province_modifier = "jmn_build_up_jan_mayen"
+					remove_province_modifier = "jmn_culture2"
+				}
+			}
+			scottish_marches_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen3"
+					duration = -1 
+				}
+				hidden_effect = {
+					remove_province_modifier = "jmn_build_up_jan_mayen"
+					remove_province_modifier = "jmn_culture2"
+				}
+			}
+			wessex_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen3"
+					duration = -1 
+				}
+				hidden_effect = {
+					remove_province_modifier = "jmn_build_up_jan_mayen"
+					remove_province_modifier = "jmn_culture2"
+				}
+			}
+			home_counties_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen3"
+					duration = -1 
+				}
+				hidden_effect = {
+					remove_province_modifier = "jmn_build_up_jan_mayen"
+					remove_province_modifier = "jmn_culture2"
+				}
+			}
+			east_anglia_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen3"
+					duration = -1 
+				}
+				hidden_effect = {
+					remove_province_modifier = "jmn_build_up_jan_mayen"
+					remove_province_modifier = "jmn_culture2"
+				}
+			}
+			wales_area = {
+					add_province_modifier = {
+					name = "jmn_build_up_jan_mayen3"
+					duration = -1 
+				}
+				hidden_effect = {
+					remove_province_modifier = "jmn_build_up_jan_mayen"
+					remove_province_modifier = "jmn_culture2"
+				}
+			}
+		}
+	}
+	JMN_gb_conquest_10 = {
+		icon = mission_japanese_samurai
+		position = 12
+		required_missions = { JMN_gb_conquest_7 } 
+		trigger = {
+			AND = {
+				east_midlands_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 35
+				}
+				west_midlands_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 35
+				}
+				yorkshire_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 35
+				}
+				scottish_marches_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 35
+				}
+				wessex_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 35
+				}
+				home_counties_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 35
+				}
+				east_anglia_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 35
+				}
+				wales_area = {
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT
+					development = 35
+				}
+			}
+		}			
+		effect = {
+			add_country_modifier = {
+				name = "jmn_gb_conquest_england"
+				duration = -1 
+			}
+		}
+	}
+}
+
+JMN_mission_slot_4= {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = JMN
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	JMN_build_up_island_4 = {
+		icon = mission_japanese_samurai
+		position = 2
+		required_missions = { JMN_build_up_1 } 
+		trigger = {
+			AND = {
+				owns_core_province = 1978
+				1978 = {
+				development = 10
+				}
+			}
+		}
+		effect = {
+			1979 = {
+				cede_province = JMN
+				add_core = JMN
+				hidden_effect = {
+					remove_core = NOR
+				}
+			}
+		}
+	}
+
+	JMN_build_up_island_8 = {
+		icon = mission_japanese_samurai
+		position = 4
+		required_missions = { JMN_build_up_island_4 } 
+		trigger = {
+			AND = {
+				owns_core_province = 1979
+				1979 = {
+				religion = bear_pagan_reformed
+				development = 10
+				}
+			}
+		}
+		effect = {
+			1979 = {
+				add_province_modifier = {
+					name = "jmn_culture"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1
+				}				
+			}
+		}
+	}
+	JMN_build_up_island_12 = {
+		icon = mission_japanese_samurai
+		position = 6
+		required_missions = { JMN_build_up_island_8 } 
+		trigger = {
+			AND = {
+				owns_core_province = 1979
+				1979 = {
+				religion = bear_pagan_reformed
+				development = 25
+				}
+			}
+		}
+		effect = {
+			1979 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen3"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+				}
+			}
+		}
+	}
+	JMN_island_conquering_maldives_1 = {
+		icon = mission_japanese_samurai
+		position = 8
+		required_missions = {  } 
+		trigger = {
+			AND = {
+				owns_core_province = 1248
+				1248 = {
+				religion = bear_pagan_reformed
+				development = 10
+				}
+			}
+		}
+		effect = {
+			1248 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_maldives_2 = {
+		icon = mission_japanese_samurai
+		position = 9
+		required_missions = {JMN_island_conquering_maldives_1  } 
+		trigger = {
+			AND = {
+				owns_core_province = 1248
+				1248 = {
+				religion = bear_pagan_reformed
+				development = 25
+				}
+			}
+		}
+		effect = {
+			1248 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen4"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "jmn_culture"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_maldives_3 = {
+		icon = mission_japanese_samurai
+		position = 10
+		required_missions = {JMN_island_conquering_maldives_2  } 
+		trigger = {
+			AND = {
+				owns_core_province = 1248
+				1248 = {
+				religion = bear_pagan_reformed
+				development = 50
+				culture = jan_mayenese
+				}
+			}
+		}
+		effect = {
+			1248 = {
+				add_province_modifier = {
+					name = "jmn_maldives_reward"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_culture
+				}
+			}
+		}
+	}
+	JMN_island_conquering_galapagos_1 = {
+		icon = mission_japanese_samurai
+		position = 11
+		required_missions = {  } 
+		trigger = {
+			AND = {
+				owns_core_province = 2002
+				2002 = {
+				religion = bear_pagan_reformed
+				development = 10
+				}
+			}
+		}
+		effect = {
+			2002 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_galapagos_2 = {
+		icon = mission_japanese_samurai
+		position = 12
+		required_missions = {JMN_island_conquering_galapagos_1  } 
+		trigger = {
+			AND = {
+				owns_core_province = 2002
+				2002 = {
+				religion = bear_pagan_reformed
+				development = 25
+				}
+			}
+		}
+		effect = {
+			2002 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen4"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "jmn_culture"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_galapagos_3 = {
+		icon = mission_japanese_samurai
+		position = 13
+		required_missions = {JMN_island_conquering_galapagos_2  } 
+		trigger = {
+			AND = {
+				owns_core_province = 2002
+				2002 = {
+				religion = bear_pagan_reformed
+				development = 50
+				culture = jan_mayenese
+				}
+			}
+		}
+		effect = {
+			2002 = {
+				add_province_modifier = {
+					name = "jmn_galapagos_reward"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_culture
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_belintung_1 = {
+		icon = mission_japanese_samurai
+		position = 14
+		required_missions = {  } 
+		trigger = {
+			AND = {
+				owns_core_province = 2679
+				2679 = {
+				religion = bear_pagan_reformed
+				development = 10
+				}
+			}
+		}
+		effect = {
+			2679 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_belintung_2 = {
+		icon = mission_japanese_samurai
+		position = 15
+		required_missions = {JMN_island_conquering_belintung_1  } 
+		trigger = {
+			AND = {
+				owns_core_province = 2679
+				2679 = {
+				religion = bear_pagan_reformed
+				development = 25
+				}
+			}
+		}
+		effect = {
+			2679 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen4"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "jmn_culture"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_belintung_3 = {
+		icon = mission_japanese_samurai
+		position = 16
+		required_missions = {JMN_island_conquering_belintung_2  } 
+		trigger = {
+			AND = {
+				owns_core_province = 2679
+				2679 = {
+				religion = bear_pagan_reformed
+				development = 50
+				culture = jan_mayenese
+				}
+			}
+		}
+		effect = {
+			2679 = {
+				add_province_modifier = {
+					name = "jmn_belitung_reward"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_culture
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_jeju_1 = {
+		icon = mission_japanese_samurai
+		position = 17
+		required_missions = {  } 
+		trigger = {
+			AND = {
+				owns_core_province = 2741
+				2741 = {
+				religion = bear_pagan_reformed
+				development = 10
+				}
+			}
+		}
+		effect = {
+			2741 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_jeju_2 = {
+		icon = mission_japanese_samurai
+		position = 18
+		required_missions = {JMN_island_conquering_jeju_1  } 
+		trigger = {
+			AND = {
+				owns_core_province = 2741
+				2741 = {
+				religion = bear_pagan_reformed
+				development = 25
+				}
+			}
+		}
+		effect = {
+			2741 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen4"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "jmn_culture"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_jeju_3 = {
+		icon = mission_japanese_samurai
+		position = 19
+		required_missions = {JMN_island_conquering_jeju_2  } 
+		trigger = {
+			AND = {
+				owns_core_province = 2741
+				2741 = {
+				religion = bear_pagan_reformed
+				development = 50
+				culture = jan_mayenese
+				}
+			}
+		}
+		effect = {
+			2741 = {
+				add_province_modifier = {
+					name = "jmn_jeju_reward"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_culture
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_wake_1 = {
+		icon = mission_japanese_samurai
+		position = 20
+		required_missions = {  } 
+		trigger = {
+			AND = {
+				owns_core_province = 1994
+				1994 = {
+				religion = bear_pagan_reformed
+				development = 10
+				}
+			}
+		}
+		effect = {
+			1994 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_wake_2 = {
+		icon = mission_japanese_samurai
+		position = 21
+		required_missions = {JMN_island_conquering_wake_1  } 
+		trigger = {
+			AND = {
+				owns_core_province = 1994
+				1994 = {
+				religion = bear_pagan_reformed
+				development = 25
+				}
+			}
+		}
+		effect = {
+			1994 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen4"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "jmn_culture"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_wake_3 = {
+		icon = mission_japanese_samurai
+		position = 22
+		required_missions = {JMN_island_conquering_wake_2  } 
+		trigger = {
+			AND = {
+				owns_core_province = 1994
+				1994 = {
+				religion = bear_pagan_reformed
+				development = 50
+				culture = jan_mayenese
+				}
+			}
+		}
+		effect = {
+			1994 = {
+				add_province_modifier = {
+					name = "jmn_wake_reward"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_culture
+				}
+			}
+		}
+	}
+}
+
+JMN_mission_slot_5= {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = JMN
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	JMN_build_up_island_5 = {
+		icon = mission_japanese_samurai
+		position = 2
+		required_missions = { JMN_build_up_1 } 
+		trigger = {
+			AND = {
+				owns_core_province = 5790
+				5790 = {
+				development = 15
+				}
+			}
+		}
+		effect = {
+			1978 = {
+				cede_province = JMN
+				add_core = JMN
+				hidden_effect = {
+					remove_core = NOR
+				}
+			}
+		}
+	}
+
+	JMN_build_up_island_9 = {
+		icon = mission_japanese_samurai
+		position = 4
+		required_missions = { JMN_build_up_island_5 } 
+		trigger = {
+			AND = {
+				owns_core_province = 1978
+				1978 = {
+				religion = bear_pagan_reformed
+				development = 10
+				}
+			}
+		}
+		effect = {
+			1978 = {
+				add_province_modifier = {
+					name = "jmn_culture"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1
+				}
+			}
+		}
+	}
+	JMN_build_up_island_13 = {
+		icon = mission_japanese_samurai
+		position = 6
+		required_missions = { JMN_build_up_island_9 } 
+		trigger = {
+			AND = {
+				owns_core_province = 1978
+				1978 = {
+				religion = bear_pagan_reformed
+				development = 25
+				}
+			}
+		}
+		effect = {
+			1978 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen4"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_mann_1 = {
+		icon = mission_japanese_samurai
+		position = 8
+		required_missions = {  } 
+		trigger = {
+			AND = {
+				owns_core_province = 4365
+				4365 = {
+				religion = bear_pagan_reformed
+				development = 10
+				}
+			}
+		}
+		effect = {
+			4365 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_mann_2 = {
+		icon = mission_japanese_samurai
+		position = 9
+		required_missions = {JMN_island_conquering_mann_1  } 
+		trigger = {
+			AND = {
+				owns_core_province = 4365
+				4365 = {
+				religion = bear_pagan_reformed
+				development = 25
+				}
+			}
+		}
+		effect = {
+			4365 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen4"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "jmn_culture"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_mann_3 = {
+		icon = mission_japanese_samurai
+		position = 10
+		required_missions = {JMN_island_conquering_mann_2  } 
+		trigger = {
+			AND = {
+				owns_core_province = 4365
+				4365 = {
+				religion = bear_pagan_reformed
+				development = 50
+				culture = jan_mayenese
+				}
+			}
+		}
+		effect = {
+			4365 = {
+				add_province_modifier = {
+					name = "jmn_mann_reward"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_culture
+				}
+			}
+		}
+	}
+	JMN_island_conquering_bermuda_1 = {
+		icon = mission_japanese_samurai
+		position = 11
+		required_missions = {  } 
+		trigger = {
+			AND = {
+				owns_core_province = 481
+				481 = {
+				religion = bear_pagan_reformed
+				development = 10
+				}
+			}
+		}
+		effect = {
+			481 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_bermuda_2 = {
+		icon = mission_japanese_samurai
+		position = 12
+		required_missions = {JMN_island_conquering_bermuda_1  } 
+		trigger = {
+			AND = {
+				owns_core_province = 481
+				481 = {
+				religion = bear_pagan_reformed
+				development = 25
+				}
+			}
+		}
+		effect = {
+			481 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen4"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "jmn_culture"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_bermuda_3 = {
+		icon = mission_japanese_samurai
+		position = 13
+		required_missions = {JMN_island_conquering_bermuda_2  } 
+		trigger = {
+			AND = {
+				owns_core_province = 481
+				481 = {
+				religion = bear_pagan_reformed
+				development = 50
+				culture = jan_mayenese
+				}
+			}
+		}
+		effect = {
+			481 = {
+				add_province_modifier = {
+					name = "jmn_bermuda_reward"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_culture
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_falklands_1 = {
+		icon = mission_japanese_samurai
+		position = 14
+		required_missions = {  } 
+		trigger = {
+			AND = {
+				owns_core_province = 1095
+				1095 = {
+				religion = bear_pagan_reformed
+				development = 10
+				}
+			}
+		}
+		effect = {
+			1095 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_falklands_2 = {
+		icon = mission_japanese_samurai
+		position = 15
+		required_missions = {JMN_island_conquering_falklands_1  } 
+		trigger = {
+			AND = {
+				owns_core_province = 1095
+				1095 = {
+				religion = bear_pagan_reformed
+				development = 25
+				}
+			}
+		}
+		effect = {
+			1095 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen4"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "jmn_culture"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_falklands_3 = {
+		icon = mission_japanese_samurai
+		position = 16
+		required_missions = {JMN_island_conquering_falklands_2  } 
+		trigger = {
+			AND = {
+				owns_core_province = 1095
+				1095 = {
+				religion = bear_pagan_reformed
+				development = 50
+				culture = jan_mayenese
+				}
+			}
+		}
+		effect = {
+			1095 = {
+				add_province_modifier = {
+					name = "jmn_falklands_reward"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_culture
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_suqutra_1 = {
+		icon = mission_japanese_samurai
+		position = 17
+		required_missions = {  } 
+		trigger = {
+			AND = {
+				owns_core_province = 1099
+				1099 = {
+				religion = bear_pagan_reformed
+				development = 10
+				}
+			}
+		}
+		effect = {
+			1099 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_suqutra_2 = {
+		icon = mission_japanese_samurai
+		position = 18
+		required_missions = {JMN_island_conquering_suqutra_1  } 
+		trigger = {
+			AND = {
+				owns_core_province = 1099
+				1099 = {
+				religion = bear_pagan_reformed
+				development = 25
+				}
+			}
+		}
+		effect = {
+			1099 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen4"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "jmn_culture"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_suqutra_3 = {
+		icon = mission_japanese_samurai
+		position = 19
+		required_missions = {JMN_island_conquering_suqutra_2  } 
+		trigger = {
+			AND = {
+				owns_core_province = 1099
+				1099 = {
+				religion = bear_pagan_reformed
+				development = 50
+				culture = jan_mayenese
+				}
+			}
+		}
+		effect = {
+			1099 = {
+				add_province_modifier = {
+					name = "jmn_suqutra_reward"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_culture
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_malta_1 = {
+		icon = mission_japanese_samurai
+		position = 20
+		required_missions = {  } 
+		trigger = {
+			AND = {
+				owns_core_province = 126
+				126 = {
+				religion = bear_pagan_reformed
+				development = 10
+				}
+			}
+		}
+		effect = {
+			126 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_malta_2 = {
+		icon = mission_japanese_samurai
+		position = 21
+		required_missions = {JMN_island_conquering_malta_1  } 
+		trigger = {
+			AND = {
+				owns_core_province = 126
+				126 = {
+				religion = bear_pagan_reformed
+				development = 25
+				}
+			}
+		}
+		effect = {
+			126 = {
+				add_province_modifier = {
+					name = "jmn_build_up_jan_mayen4"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "jmn_culture"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_build_up_jan_mayen
+				}
+			}
+		}
+	}
+
+	JMN_island_conquering_malta_3 = {
+		icon = mission_japanese_samurai
+		position = 22
+		required_missions = {JMN_island_conquering_malta_2  } 
+		trigger = {
+			AND = {
+				owns_core_province = 126
+				126 = {
+				religion = bear_pagan_reformed
+				development = 50
+				culture = jan_mayenese
+				}
+			}
+		}
+		effect = {
+			126 = {
+				add_province_modifier = {
+					name = "jmn_malta_reward"
+					duration = -1
+				}
+				hidden_effect = {
+					remove_province_modifier = jmn_culture
+				}
+			}
+		}
+	}
+}

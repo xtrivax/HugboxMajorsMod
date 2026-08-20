@@ -1,0 +1,6 @@
+sea_military_tactician_personality = {
+	allow = {
+		always = no
+	}
+	military_tactics = 0.1
+}

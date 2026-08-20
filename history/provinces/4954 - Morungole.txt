@@ -1,0 +1,18 @@
+# Morungole
+owner = SHI
+controller = SHI
+add_core = SHI
+culture = acholi
+religion = shamanism #Fetishism
+trade_goods = tropical_wood
+is_city = yes
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 40
+native_ferocity = 3
+native_hostileness = 9
+
+discovered_by = central_african
+capital = "Morungole"

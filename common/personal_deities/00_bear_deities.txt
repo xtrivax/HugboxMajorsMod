@@ -1,0 +1,80 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+Baerli= {
+	global_tax_modifier = 0.05
+	trade_efficiency = 0.25
+	potential = { 
+		religion = bear_pagan_reformed
+	}
+	trigger = {}
+	sprite = 10
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 10
+			personality = ai_capitalist
+		}
+	}
+}
+
+
+Bjoern= {
+	ae_impact = -0.1
+	core_creation = -0.25
+	potential = { 
+		religion = bear_pagan_reformed
+	}
+	trigger = {}
+	sprite = 11
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 10
+			personality = ai_militarist
+		}
+	}
+}
+
+Anton= {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+	potential = { 
+		religion = bear_pagan_reformed
+	}
+	trigger = {}
+	sprite = 12
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 10
+			personality = ai_capitalist
+		}
+	}
+}
+
+Fabian= {
+	discipline = 0.025
+	land_morale = 0.05
+	potential = { 
+		religion = bear_pagan_reformed
+	}
+	trigger = {}
+	sprite = 12
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 12
+			personality = ai_militarist
+		}
+	}
+}

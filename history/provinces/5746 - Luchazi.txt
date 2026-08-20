@@ -1,0 +1,13 @@
+owner = CKW
+controller = CKW
+add_core = CKW
+culture = chokwe
+religion = shamanism #Fetishism
+capital = "Luchazi"
+trade_goods = slaves
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+discovered_by = central_african

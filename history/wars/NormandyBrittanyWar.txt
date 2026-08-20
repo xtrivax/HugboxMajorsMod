@@ -1,0 +1,15 @@
+name = "Normandy-Brittany War"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 4385
+}
+
+1440.1.1 = {
+	add_attacker = BRI
+	add_defender = NRM
+}
+1445.1.1 = {
+	rem_attacker = BRI
+	rem_defender = NRM
+}

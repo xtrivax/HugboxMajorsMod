@@ -1,0 +1,24 @@
+# Marsabit
+
+owner = ORO
+controller = ORO
+add_core = ORO
+culture = oromo
+religion = shamanism
+capital = "Marsabit"
+native_size = 0
+native_ferocity = 0
+native_hostileness = 0
+trade_goods = grain
+is_city = yes
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+discovered_by = east_african
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = central_african
+
+1705.1.1 = { discovered_by = OMA }

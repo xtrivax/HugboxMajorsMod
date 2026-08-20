@@ -1,0 +1,6 @@
+# Barbie States:
+BIE = {
+    color1= { 254 106 184 }
+    color2= { 254 106 184 } # pants
+    color3= { 235 235 220 } # Inside shirt something line thingy
+}

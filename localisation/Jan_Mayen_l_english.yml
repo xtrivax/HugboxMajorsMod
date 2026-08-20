@@ -1,0 +1,20 @@
+﻿l_english:
+ PROV5790:0 "Jan Mayen"
+ PROV_ADJ5790:0 "Jan Mayen"
+ 
+ #Religion
+    bear_pagan_reformed: "Bears"
+    bear_rebels_demand: "Convert $COUNTRYNAME$"
+    bear_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+    bear_rebels_title: "Religious"
+    bear_rebels_name: "$RELIGION$ Zealots"
+    bear_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+    bear_rebels_army: "$RELIGION$ Army"
+    bear_pagan_reformed_religion_desc: "The long forgotten Religion of the Animals from the North. The Religion is lead by the three old gods Bärli, Björn and Anton. They all fell in love with different humans."
+  #deitis
+    Baerli: "Bärli"
+    Baerli_desc: "One of the three oldest beargods, which are that well known in the World. Bärli was the finanzial mastermind behind everything the old gods planned and executed."
+    Bjoern: "Björn"
+    Bjoern_desc: "One of the three oldest beargods, which are that well known in the World. Björn was the militarie mastermind who planned the stragetie, for every battle."
+    Anton: "Anton"
+    Anton_desc: "One of the three oldest beargods, which are that well known in the World. Anton was a Good advisor und a mastermind in Diplomacy. He could besway everybody."
