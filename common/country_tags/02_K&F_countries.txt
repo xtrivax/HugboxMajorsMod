@@ -1,0 +1,2 @@
+#Europe
+SGC = "countries/K&F_SouthGermanConfederation.txt" #SouthGermanConfederation

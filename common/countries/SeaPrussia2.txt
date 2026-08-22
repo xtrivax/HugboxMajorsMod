@@ -108,64 +108,63 @@ monarch_names = {
 }
 
 leader_names = {	
-	Arnim
+	"von Armin"
 	"von Schwerin"
-	Blankensee
-	"von Taubeneck"
+	"von Bergen"
+	"von Wittgenstein"
 	"von Dossow"
-	Perlkowski
+	"von Hohenfels"
 	"von Bühler"
 	"von Dessau"
-	"von Kyau"
-	Arnswald
-	Finck
-	Zitzwitz
-	"von Plothow"
-	Billerbeck
-	"von Stille"
+	"von Rundstedt"
+	"von Haynau"
+	"von Selbold"
+	"von Eichenstedt"
+	"von Stosch"
+	"von Stieglitz"
+	"von Goldbeck"
 	"von Anhalt-Dessau"
-	Knobelsdorf
-	"von Rauch"
-	"von Quernheimberg"
-	Höltzendorff
-	"von Quitzow"
-	Cisielsky
-	Linkendorf
-	Ucklanski
-	Selasinky
+	"von Ahlimb"
+	"von Werder"
+	"von Falckenstein"
+	"von Löwenstein"
+	"von Thüringen"
+	"von Waldeck"
+	"von Lüttich"
+	"von Nidda"
+	"von Malsburg"
 	"von Ziethen"
-	Münchov
-	Briesen
-	Riwotzki
-	Schnittern
-	"von Merckatz"
-	"von Manstein"
-	Schach
-	"von Seel"
-	Treskaw
+	"von Königsberg"
+	"von Tuchol"
+	"von Wahlen"
+	"von Zastrow"
+	"von Mannstein"
+	Schwarz
+	"von Seeland"
+	Kosch
 	"von Hohenlohe"
 	"von Rottenburg"
-	Truxes
-	Kreytz
+	"von Trotha"
+	"von Hessen"
 	"von Rüts"
 	"von Derfflinger"
 	"von Wermsdorff"
 	"von Hohenzollern"
-	Below
-	"von Bimback"
+	"von Below"
+	"von Bismarck"
 	"von Mach"
-	Posadofsky
+	"von Wylich und Lottum"
 	"von Preußen"
 }
 
 ship_names = {
-	"Brandenburgischer Dragoner" "Charlotte Louise" "Churfürst von Brandenburg" "Churfürtstlische Liebjagd" "Churprinz von Brandenburg" "Clevesche Lindenbaum"
-	"Die Sieben Provinzien" "Fliegender Drache" "Friedrich Carl" "Friedrich Wilhelm zu Pferde" "Friedrich Wilhelm" "Goldener Löve" "Grafschaft Mark" "Große Jacht"
+	"Brandenburgischer Dragoner" "Viktoria Louise" "Kurfürst von Brandenburg" "Churfürtstlische Liebjagd" "Churprinz von Brandenburg" "Clevesche Lindenbaum"
+	"Die Sieben Provinzien" "Fliegender Drache" "Friedrich Karl" "Friedrich Wilhelm zu Pferde" "Friedrich Wilhelm" "Goldener Löwe" "Grafschaft Mark" "Große Jacht"
 	"Grüner Drache" "Herzogtum Cleve" "Kastell Spandau" "Kronprinz van Preußen" "König von Preußen" "König von Spanien" "König Wilhelm" "Littauer Bauer" "Maria Catharina"
 	"Markgraf von Brandenburg" "Nordischer Löve" "Preußischer Adler" "Princess Maria" "Prinz Adalbert" "Prinz Ludwig" "Prinz Philipp" "Prinz von Preußen" "Prinz Wilhelm"
 	"Prinzess Maria" "Rother Löve" "Sankt Johannes der Täufer" "Sankt Josef" "Sankt Peter" "Schloss Oranienburg" "Stad Emden" "Vogel Greif" "Wappen von Brandenburg"
-	"Wappen von Cleve" "Wilhelmine Margrethe" Afrikaner Amazone Arminius Barbarossa Basilisk Berlin Bersteinfänger Bielefeld Blitz Britannia Bulle Camaeleon Churprinz
-	Clementia Cleve Comet Cyclop Danzig Delphin Derffinger Dorothea Drache Eichhorn Falke Fortuna Frauenlob Frede Fuchs Gazelle Gefion Grille Grossfriedrichburg Habicht
+	"Wappen von Cleve" "Wilhelmine Margrethe" Afrikaner Amazone Arminius Barbarossa Basilisk Berlin Bersteinfänger Bielefeld Blitz Britannia Bulle Schäfer Churprinz
+	Clementia Cleve Komet Cyclop Danzig Delphin Derffinger Dorothea Drache Eichhorn Falke Fortuna Frauenlob Frede Fuchs Gazelle Gefion Grille Grossfriedrichburg Habicht
 	Hansa Hay Hela Hertha Hyäne Jupiter Kronprinz Leopard Makarele Maria Mars Merkur Meteor Mohrian Morian Mummelpot Musquito Natter Neptun Niobe Pallas Pax Pfeil
 	Pierlepomp Post Potsdam Prosperpina Rommelpot Rosenfelde Rover Salamander Schwalbe Seeritter Spandau Sperber Stralsund Thetis Tiger Undine Vineta Wasserhund Wespe
 	Wolkensäule

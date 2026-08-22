@@ -1,0 +1,8 @@
+# This is the South German Confederation
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = swabian
+religion = catholic
+technology_group = western
+capital = 1872 #Ulm 
