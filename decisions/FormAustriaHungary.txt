@@ -79,7 +79,7 @@ country_decisions = {
 					limit = {
 						mission_completed = hun_a_multicultural_empire
 					}
-					adm_tech = 6
+					adm_tech = 5
 				}
 				else = {
 					adm_tech = 10
