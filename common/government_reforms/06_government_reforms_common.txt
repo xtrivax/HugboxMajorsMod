@@ -5501,6 +5501,8 @@ apostolic_kingdom = {
 		OR = {
 			tag = HUN
 			was_tag = HUN
+			tag = SGC
+			was_tag = SGC
 		}
 	}
 	legacy_equivalent = feudal_monarchy
