@@ -3316,11 +3316,10 @@ pagan = {
 			local_missionary_strength = 0.02
 		}
 		
-		holy_sites = { 146 1853 319 4700 358 124 }
-		
 		personal_deity = yes
-
-		harmonized_modifier = harmonized_pagan
+		
+		heretic = { norse_pagan_reformed }	
+	}
 
 	norse_pagan_reformed = {
 		declare_war_in_regency = yes
