@@ -1,0 +1,205 @@
+blessing_of_Zeus = {
+	is_blessing = yes
+
+	modifier = {
+		state_governing_cost = -0.25
+        land_morale = 0.10
+
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 3
+			NOT = {
+				OR = {
+					legitimacy = 70
+					republican_tradition = 70
+					devotion = 70
+				}
+			}
+		}
+	}
+}
+
+blessing_of_Hera = {
+	is_blessing = yes
+
+	modifier = {
+		manpower_recovery_speed = 0.2
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 3
+			NOT = {
+				manpower = 4
+			}
+		}
+	}
+}
+
+blessing_of_Poseidon = {
+	is_blessing = yes
+
+	modifier = {
+		navy_tradition = 1
+	    global_sailors_modifier = 0.1
+	}
+	ai_will_do = {
+		factor = 50
+	}
+}
+
+blessing_of_Demeter = {
+	is_blessing = yes
+
+	modifier = {
+		development_cost = -0.15
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			overextension_percentage = 0.7
+		}
+		modifier = {
+			factor = 3
+			overextension_percentage = 0.5
+		}
+	}
+}
+
+blessing_of_Apollo = {
+	is_blessing = yes
+
+	modifier = {
+		idea_cost = -0.1
+        reinforce_speed = 0.20
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+blessing_of_Artemis = {
+	is_blessing = yes
+
+	modifier = {
+		backrow_artillery_damage = 0.20
+        artillery_power = 0.10
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+
+blessing_of_Ares = {
+	is_blessing = yes
+
+	modifier = {
+		discipline = 0.05
+        army_tradition_from_battle = 0.5
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+blessing_of_Athena = {
+	is_blessing = yes
+
+	modifier = {
+		army_tradition_decay = -0.01
+        technology_cost = -0.1
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+blessing_of_Hephaestus = {
+	is_blessing = yes
+
+	modifier = {
+		global_trade_goods_size_modifier = 0.1
+        fire_damage = 0.10
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+blessing_of_Aphrodite = {
+	is_blessing = yes
+
+	modifier = {
+		global_trade_goods_size_modifier = 0.1
+        fire_damage = 0.10
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+blessing_of_Aphrodite = {
+	is_blessing = yes
+
+	modifier = {
+		global_manpower_modifier = 0.2
+	    improve_relation_modifier = 0.2
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+blessing_of_Hermes = {
+	is_blessing = yes
+
+	modifier = {
+		global_trade_power = 0.15
+	    trade_efficiency = 0.15
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+blessing_of_Hestia = {
+	is_blessing = yes
+
+	modifier = {
+		legitimacy = 1
+	    horde_unity = 1
+	    republican_tradition = 0.4
+        stability_cost_modifier = -0.25
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+blessing_of_Dionysus = {
+	is_blessing = yes
+
+	modifier = {
+		global_prosperity_growth = 0.2
+
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+blessing_of_Dioskouroi = {
+	is_blessing = yes
+
+	modifier = {
+		cavalry_power = 0.20
+        shock_damage = 0.10
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}

@@ -3316,9 +3316,27 @@ pagan = {
 			local_missionary_strength = 0.02
 		}
 		
-		personal_deity = yes
+		holy_sites = { 146 1853 319 4700 358 124 }
+		
+		blessings = {
+			blessing_of_Zeus
+			blessing_of_Hera
+			blessing_of_Poseidon
+			blessing_of_Demeter
+			blessing_of_Apollo
+			blessing_of_Artemis
+			blessing_of_Ares
+			blessing_of_Athena
+			blessing_of_Hephaestus
+			blessing_of_Aphrodite
+			blessing_of_Hermes
+			blessing_of_Hestia
+			blessing_of_Dionysus
+			blessing_of_Dioskouroi
+		}
 		
 		heretic = { norse_pagan_reformed }	
+		harmonized_modifier = harmonized_pagan
 	}
 
 	norse_pagan_reformed = {
