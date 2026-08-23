@@ -1,0 +1,327 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+#Main God. God of Sky, sky, lightning, thunder, law, order and justice. Thus Legitimacy and core creation
+Zeus = {
+	legitimacy = 1
+	horde_unity = 1
+	republican_tradition = 0.4
+	core_creation = -0.2
+	
+	potential = {
+		religion = hellenism
+	}
+	trigger = {}
+	sprite = 7
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+#Queen of the gods. Goddess of marriage, women, childbirth and family. 
+#More kids more manpower
+Hera = {
+	manpower_recovery_speed = 0.20
+	
+	potential = {
+		religion = hellenism
+	}
+	trigger = {}
+	sprite = 7
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+#God of the seas, water, storms, hurricanes, earthquakes and horses.
+#Thus naval mods, but could also be horse mil boni
+Poseidon = {
+	navy_tradition = 1
+	global_sailors_modifier = 0.1
+
+	potential = {
+		religion = hellenism
+	}
+	trigger = {}
+	sprite = 7
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_balanced
+		}
+	}
+}
+
+#Goddess of the harvest, fertility, agriculture, nature and the seasons. She presided over grains and the fertility of the earth.
+#Thus dev cost and goods produced
+Demeter = {
+	global_trade_goods_size_modifier = 0.1
+	development_cost = -0.15
+
+	potential = {
+		religion = hellenism
+	}
+	trigger = {}
+	sprite = 7
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_balanced
+		}
+	}
+}
+
+#God of Sun, light, prophecy, philosophy, archery, truth, inspiration, poetry, music, arts, manly beauty, medicine, healing, and plague.
+#Thus best idea for missionary strength and dip rep on top
+Apollo = {
+	global_missionary_strength = 0.03
+	diplomatic_reputation = 2
+
+	potential = {
+		religion = hellenism
+	}
+	trigger = {}
+	sprite = 7
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_balanced
+		}
+	}
+}
+
+#Goddess of the hunt, the wilderness, virginity, the Moon, archery, childbirth, protection and plague.
+#Hunt + Archery => arty fire and fire dmg
+Artemis = {
+	artillery_fire = 0.25
+	fire_damage = 0.15
+
+	potential = {
+		religion = hellenism
+	}
+	trigger = {}
+	sprite = 7
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_balanced
+		}
+	}
+}
+
+#God of war, violence, bloodshed and manly virtues.
+#Discipline and manly = less dmg, idk
+Ares = {
+	discipline = 0.025
+	fire_damage_received = -0.10
+
+	potential = {
+		religion = hellenism
+	}
+	trigger = {}
+	sprite = 7
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_balanced
+		}
+	}
+}
+
+#Goddess of war, wisdom, handicraft, and warfare.
+#War and wisdom -> mil tactics, mby alternatively we could do +1 admin
+Athena = {
+	military_tactics = 0.25
+	state_maintenance_modifier = -0.2
+
+	potential = {
+		religion = hellenism
+	}
+	trigger = {}
+	sprite = 7
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_balanced
+		}
+	}
+}
+
+#Master blacksmith and craftsman of the gods; god of the forge, craftsmanship, invention, fire and volcanoes..
+#idk I was spitballing what mods to put here
+Hephaestus = {
+	production_efficiency = 0.2
+	defensiveness = 0.2
+
+	potential = {
+		religion = hellenism
+	}
+	trigger = {}
+	sprite = 7
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_balanced
+		}
+	}
+}
+
+#Goddess of love, pleasure, passion, procreation, fertility, beauty and desire.
+#manpower mby? 
+Aphrodite = {
+	global_manpower_modifier = 0.2
+	improve_relation_modifier = 0.2
+
+	potential = {
+		religion = hellenism
+	}
+	trigger = {}
+	sprite = 7
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_balanced
+		}
+	}
+}
+
+#Messenger of the gods; god of travel, commerce, communication, borders, eloquence, diplomacy, thieves, and games
+#Trade I guess
+Hermes = {
+	global_trade_power = 0.15
+	trade_efficiency = 0.15
+
+	potential = {
+		religion = hellenism
+	}
+	trigger = {}
+	sprite = 7
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_balanced
+		}
+	}
+}
+
+#Goddess of the hearth, fire and of the right ordering of domesticity and the family
+#No clue
+Hestia = {
+	garrison_damage = 0.5
+	trade_efficiency = 0.15
+
+	potential = {
+		religion = hellenism
+	}
+	trigger = {}
+	sprite = 7
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_balanced
+		}
+	}
+}
+

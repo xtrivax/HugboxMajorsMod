@@ -3299,6 +3299,29 @@ pagan = {
 		heretic = { MESOAMERICAN_HERETIC }	
 	}
 	
+	hellenism = {
+		declare_war_in_regency = yes
+		allow_female_defenders_of_the_faith = yes
+		icon = 21
+		color = { 200 200 200 }
+		country = {
+			manpower_recovery_speed = 0.10
+			trade_steering = 0.25
+		}
+		country_as_secondary = {
+			naval_forcelimit_modifier = 0.20
+			trade_steering = 0.15
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+		
+		holy_sites = { 146 1853 319 4700 358 124 }
+		
+		personal_deity = yes
+
+		harmonized_modifier = harmonized_pagan
+
 	norse_pagan_reformed = {
 		declare_war_in_regency = yes
 		allow_female_defenders_of_the_faith = yes
