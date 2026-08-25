@@ -743,7 +743,7 @@ RUS_ideas = {
 SPA_ideas = {
 	start = {
 		land_morale = 0.15
-		artillery_fire = 1
+		artillery_fire = 0.5
 	}
 	
 	bonus = {
@@ -828,7 +828,7 @@ CAS_ideas = {
 
 NED_ideas = {
 	start = {
-		global_sailors_modifier = 0.25
+		land_morale = 0.1
 		naval_forcelimit_modifier = 0.50
 	}
 	
