@@ -15,5 +15,5 @@ Changed traditions: 25% sailors modifier to 10 morale
 Add South Germany Formable with unique Idea set, Flag and forming decision
 
 ## Hellenism Religion
-The Ancient Greek Religion Hellenism has been added with the Holy Sites Feature
+The Ancient Greek Religion Hellenism has been added with the Holy Sites Feature. 
 Still needs finished localisation and new Icons
