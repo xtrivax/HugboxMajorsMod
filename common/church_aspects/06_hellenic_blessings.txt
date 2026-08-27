@@ -1,9 +1,10 @@
+#King of the Gods. God of sky, lightning, thunder, law, order and justice.
 blessing_of_Zeus = {
 	is_blessing = yes
 
 	modifier = {
 		state_governing_cost = -0.25
-        land_morale = 0.10
+        advisor_cost = -0.15
 
 	}
 	ai_will_do = {
@@ -21,6 +22,7 @@ blessing_of_Zeus = {
 	}
 }
 
+#Queen of the gods. Wife and Sister to Zeus. Goddess of marriage, women, childbirth and family. 
 blessing_of_Hera = {
 	is_blessing = yes
 
@@ -38,23 +40,27 @@ blessing_of_Hera = {
 	}
 }
 
+#God of the seas, water, storms, hurricanes, earthquakes and horses.
 blessing_of_Poseidon = {
 	is_blessing = yes
 
 	modifier = {
 		navy_tradition = 1
 	    global_sailors_modifier = 0.1
+		hull_size_modifier = 0.15
 	}
 	ai_will_do = {
 		factor = 50
 	}
 }
 
+#Goddess of the harvest, fertility, agriculture, nature and the seasons. She presided over grains and the fertility of the earth.
 blessing_of_Demeter = {
 	is_blessing = yes
 
 	modifier = {
-		development_cost = -0.15
+		development_cost = -0.10
+		production_efficiency = 0.05
 	}
 	ai_will_do = {
 		factor = 10
@@ -69,11 +75,12 @@ blessing_of_Demeter = {
 	}
 }
 
+#God of Sun, light, prophecy, philosophy, archery, truth, inspiration, poetry, music, arts, manly beauty, medicine, healing, and plague.
 blessing_of_Apollo = {
 	is_blessing = yes
 
 	modifier = {
-		idea_cost = -0.1
+		power_projection_from_insults = 1
         reinforce_speed = 0.20
 	}
 	ai_will_do = {
@@ -81,6 +88,7 @@ blessing_of_Apollo = {
 	}
 }
 
+#Goddess of the hunt, the wilderness, virginity, the Moon, archery, childbirth, protection and plague.
 blessing_of_Artemis = {
 	is_blessing = yes
 
@@ -93,7 +101,7 @@ blessing_of_Artemis = {
 	}
 }
 
-
+#God of war, violence, bloodshed and manly virtues.
 blessing_of_Ares = {
 	is_blessing = yes
 
@@ -106,10 +114,12 @@ blessing_of_Ares = {
 	}
 }
 
+#Goddess of war, wisdom, handicraft, and warfare.
 blessing_of_Athena = {
 	is_blessing = yes
 
 	modifier = {
+		idea_cost = -0.1
 		army_tradition_decay = -0.01
         technology_cost = -0.1
 	}
@@ -118,42 +128,34 @@ blessing_of_Athena = {
 	}
 }
 
+#Master blacksmith and craftsman of the gods; god of the forge, craftsmanship, invention, fire and volcanoes..
 blessing_of_Hephaestus = {
 	is_blessing = yes
 
 	modifier = {
-		global_trade_goods_size_modifier = 0.1
-        fire_damage = 0.10
+		infantry_power = 0.15
 	}
 	ai_will_do = {
 		factor = 100
 	}
 }
 
+
+#Goddess of love, pleasure, passion, procreation, fertility, beauty and desire.
 blessing_of_Aphrodite = {
 	is_blessing = yes
 
 	modifier = {
-		global_trade_goods_size_modifier = 0.1
-        fire_damage = 0.10
+		election_cycle = -1
+		candidate_random_bonus = 1
+		republican_tradition = 0.2
 	}
 	ai_will_do = {
 		factor = 100
 	}
 }
 
-blessing_of_Aphrodite = {
-	is_blessing = yes
-
-	modifier = {
-		global_manpower_modifier = 0.2
-	    improve_relation_modifier = 0.2
-	}
-	ai_will_do = {
-		factor = 100
-	}
-}
-
+#Messenger of the gods; god of travel, commerce, communication, borders, eloquence, diplomacy, thieves, and games
 blessing_of_Hermes = {
 	is_blessing = yes
 
@@ -166,37 +168,38 @@ blessing_of_Hermes = {
 	}
 }
 
+#Goddess of the hearth, fire and of the right ordering of domesticity and the family
 blessing_of_Hestia = {
 	is_blessing = yes
 
 	modifier = {
 		legitimacy = 1
-	    horde_unity = 1
-	    republican_tradition = 0.4
-        stability_cost_modifier = -0.25
+		prestige = 1
 	}
 	ai_will_do = {
 		factor = 100
 	}
 }
 
+#God of wine making, orchards, vegetation, fertility and festivity
 blessing_of_Dionysus = {
 	is_blessing = yes
 
 	modifier = {
 		global_prosperity_growth = 0.2
-
+		global_trade_goods_size_modifier = 0.1
 	}
 	ai_will_do = {
 		factor = 100
 	}
 }
 
+#The Heavenly Twins. Patrons of Cavalry
 blessing_of_Dioskouroi = {
 	is_blessing = yes
 
 	modifier = {
-		cavalry_power = 0.20
+		cavalry_power = 0.10
         shock_damage = 0.10
 	}
 	ai_will_do = {

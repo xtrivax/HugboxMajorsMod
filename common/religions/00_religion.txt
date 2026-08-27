@@ -3305,7 +3305,7 @@ pagan = {
 		icon = 21
 		color = { 200 200 200 }
 		country = {
-			global_missionary_strength = 0.03
+			regiment_drill_loss = -0.33
 			trade_steering = 0.25
 		}
 		country_as_secondary = {
@@ -3316,7 +3316,7 @@ pagan = {
 			local_missionary_strength = 0.02
 		}
 		
-		holy_sites = { 146 1853 330 4700 358 124 }
+		holy_sites = { 146 4700 330 358 124 }
 		
 		blessings = {
 			blessing_of_Zeus
