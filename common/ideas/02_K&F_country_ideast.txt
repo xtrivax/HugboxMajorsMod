@@ -1,7 +1,7 @@
 SGC_ideas = {
 	start = {
-		global_manpower_modifier = 0.30
-		development_cost = -0.15
+		global_manpower_modifier = 0.20
+		development_cost = -0.5
 	}
 	bonus = {
 		land_morale = 0.2
@@ -19,7 +19,6 @@ SGC_ideas = {
 		interest = -0.5
 	}
 	SGC_free_cities = {
-		global_trade_goods_size_modifier = 0.1
 		caravan_power = 0.2
 	}
 	SGC_swabian_league = {
@@ -27,7 +26,7 @@ SGC_ideas = {
 		manpower_recovery_speed = 0.2
 	}
 	SGC_bavarian_purity_law = {
-		production_efficiency = 0.2
+		production_efficiency = 0.15
     }
 	SGC_hohenstaufen_emperors = {
 		prestige = 1
@@ -35,6 +34,6 @@ SGC_ideas = {
 	}
 	SGC_royal_order_of_st_george = {
 		recover_army_morale_speed = 0.2
-		artillery_fire = 0.5
+		land_forcelimit_modifier = 0.10
 	}
 }
