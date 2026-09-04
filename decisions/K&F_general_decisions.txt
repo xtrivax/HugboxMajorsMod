@@ -1,11 +1,11 @@
 country_decisions = {
-    convvert_to_hellenism = {
+    convert_to_hellenism = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
 			NOT = { 
-				tag = BYZ
-				was_tag = BYZ
+				tag = TUR
+				was_tag = TUR
 			 }
              
             primary_culture = greek
@@ -20,27 +20,14 @@ country_decisions = {
 		}
 		allow = {
 			if = {
-				stability = 1
+				stability = 0
 			}
 
 			is_at_war = no
 		}
 		effect = {
 			change_religion = hellenism
-			if =  {
-				limit = {
-					government = republic
-                    government = monarchy
-				}
-				add_government_reform = apostolic_kingdom
-			}
-			if = {
-				limit = {
-					NOT = { tag = SWI }
-					NOT = { tag = BAV }
-				}
-				swap_non_generic_missions = yes
-			}
+
 		}
 		ai_will_do = {
 			factor = 100

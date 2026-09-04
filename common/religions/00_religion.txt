@@ -3302,10 +3302,10 @@ pagan = {
 	hellenism = {
 		declare_war_in_regency = yes
 		allow_female_defenders_of_the_faith = yes
-		icon = 21
+		icon = 30
 		color = { 200 200 200 }
 		country = {
-			regiment_drill_loss = -0.33
+			drill_decay_modifier = -0.33
 			trade_steering = 0.25
 		}
 		country_as_secondary = {
@@ -3331,11 +3331,10 @@ pagan = {
 			blessing_of_Aphrodite
 			blessing_of_Hermes
 			blessing_of_Hestia
-			blessing_of_Dionysus
 			blessing_of_Dioskouroi
 		}
 		
-		heretic = { norse_pagan_reformed }	
+		heretic = { Heretic_Hellenists }	
 		harmonized_modifier = harmonized_pagan
 	}
 
