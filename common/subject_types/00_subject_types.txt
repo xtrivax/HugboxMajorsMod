@@ -1026,13 +1026,13 @@ eyalet = {
 	opinion_cost_to_join_defensive_wars = 20   #Defines how much opinion the subject loses of the overlord to call the subject into a defensive war. Applied if you do not have Leviathan
 	opinion_on_subject_integration = 0
 
-	liberty_desire_development_ratio = 0.1
+	liberty_desire_development_ratio = 0.125
 	liberty_desire_same_dynasty = -5.0
 	pays_overlord = 1.25
-	forcelimit_to_overlord = 0.1						# Percent of subject FL to use as base for modifiers
-	naval_forcelimit_to_overlord = 0.1					# Percent of subject FL to use as base for modifiers
-	manpower_to_overlord = 0.1							# Percent of subject FL to use as base for modifiers
-	sailors_to_overlord = 0.1							# Percent of subject FL to use as base for modifiers
+	forcelimit_to_overlord = 0.075						# Percent of subject FL to use as base for modifiers
+	naval_forcelimit_to_overlord = 0.075				# Percent of subject FL to use as base for modifiers
+	manpower_to_overlord = 0.075						# Percent of subject FL to use as base for modifiers
+	sailors_to_overlord = 0.075							# Percent of subject FL to use as base for modifiers
 
 	relative_power_class = 2
 	should_quit_wars_on_activation = yes
@@ -1088,13 +1088,13 @@ core_eyalet = {
 
 	max_government_rank = 2
 
-	liberty_desire_development_ratio = 0.1
+	liberty_desire_development_ratio = 0.15
 	liberty_desire_same_dynasty = -5.0
 	pays_overlord = 1.5
-	forcelimit_to_overlord = 0.2						# Percent of subject FL to use as base for modifiers
-	naval_forcelimit_to_overlord = 0.2					# Percent of subject FL to use as base for modifiers
-	manpower_to_overlord = 0.2							# Percent of subject FL to use as base for modifiers
-	sailors_to_overlord = 0.2							# Percent of subject FL to use as base for modifiers
+	forcelimit_to_overlord = 0.15						# Percent of subject FL to use as base for modifiers
+	naval_forcelimit_to_overlord = 0.15					# Percent of subject FL to use as base for modifiers
+	manpower_to_overlord = 0.15							# Percent of subject FL to use as base for modifiers
+	sailors_to_overlord = 0.15							# Percent of subject FL to use as base for modifiers
 	annex_cost_per_development = 6.0					# annex/integrate cost per development
 	must_accept_cta_from_overlord = no
 	relative_power_class = 1
