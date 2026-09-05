@@ -1,2 +1,3 @@
 #Europe
 SGC = "countries/K&F_SouthGermanConfederation.txt" #SouthGermanConfederation
+GHL = "countries/K&F_HellenicLeague.txt" #Hellenic League

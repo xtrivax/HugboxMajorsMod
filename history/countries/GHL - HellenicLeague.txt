@@ -1,0 +1,8 @@
+government = republic
+add_government_reform = merchants_reform
+mercantilism = 30
+technology_group = eastern
+primary_culture = greek
+religion = hellenism
+capital = 146	# Athens
+mercantilism = 30

@@ -1,7 +1,7 @@
 SGC_ideas = {
 	start = {
 		global_manpower_modifier = 0.20
-		development_cost = -0.5
+		development_cost = -0.05
 	}
 	bonus = {
 		land_morale = 0.2
@@ -35,5 +35,43 @@ SGC_ideas = {
 	SGC_royal_order_of_st_george = {
 		recover_army_morale_speed = 0.2
 		land_forcelimit_modifier = 0.10
+	}
+}
+
+GHL_ideas = {
+	start = {
+		infantry_power = 0.10
+		land_forcelimit_modifier = 0.15
+	}
+	bonus = {
+		land_morale = 0.15
+	}
+	trigger = {
+		tag = GHL
+	}
+	free = yes
+
+	GHL_trade_cities = {
+		trade_range_modifier = 0.15
+		trade_steering = 0.10
+	}
+	GHL_greek_culture = {
+		culture_conversion_cost = -0.25
+		culture_conversion_time = -0.1
+	}
+	GHL_reformed_citizen_system = {
+		manpower_in_own_culture_provinces = 0.30
+	}
+	GHL_production_traditions = {
+		production_efficiency = 0.20
+	}
+	GHL_trade_power = {
+		global_trade_power = 0.10
+    }
+	GHL_home_of_philosophers = {
+		advisor_cost = -0.20
+	}
+	GHL_hoplite_traditions = {
+		discipline = 0.05
 	}
 }
