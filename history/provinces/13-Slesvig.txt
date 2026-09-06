@@ -1,10 +1,11 @@
 #Sönderjylland-Slesvig, incl. Slesvig, Haderslev and Flensborg
 
+add_core = HSA
+owner = HSA
+controller = HSA
 add_core = DAN
-owner = DAN
-controller = DAN
 add_core = SHL
-culture = danish
+culture = lower_saxon
 religion = catholic
 hre = yes
 base_tax = 4

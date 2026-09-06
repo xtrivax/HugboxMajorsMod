@@ -3983,6 +3983,9 @@ impressment_offices = {
 		fish
 		naval_supplies
 		tropical_wood
+		grain
+		livestock
+		grain_livestock
 	}
 
 	build_trigger = {
@@ -3990,13 +3993,12 @@ impressment_offices = {
 	}
 
 	modifier = {
-		local_sailors = 200
+		local_sailors = 750
 		ship_recruit_speed = -0.25
 		local_ship_cost = -0.05
 	}
 	bonus_modifier = {
-		local_sailors = 200
-		ship_recruit_speed = -0.25
+		local_sailors = 750
 		local_ship_cost = -0.05
 	}
 	onmap = no
@@ -4004,24 +4006,24 @@ impressment_offices = {
 	on_built = {
 		add_development_from_building = {
 			building = impressment_offices
-			type = manpower
+			type = production
 			value = 2
 		}
 		add_dev_from_building = {
 			building = impressment_offices 
-			type = manpower 
+			type = production 
 			value = 1 
 		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
 			building = impressment_offices
-			type = manpower
+			type = production
 			value = 2
 		}
 		remove_dev_from_building = {
 			building = impressment_offices 
-			type = manpower 
+			type = production 
 			value = 1 
 		}
 	}

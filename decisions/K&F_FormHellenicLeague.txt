@@ -69,6 +69,7 @@ country_decisions = {
 			change_tag = GHL
 			on_change_tag_effect = yes
 			restore_country_name_effect = yes
+			set_global_flag = greek_need_restore_byzantion
 			hidden_effect = { set_government_rank = 2 }
 			south_german_region = {
 				limit = {

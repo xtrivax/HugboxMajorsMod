@@ -645,6 +645,7 @@ republic = {
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
 			reforms = {
+				hansa_reform
 				oligarchy_reform
 				signoria_reform
 				merchants_reform

@@ -1,4 +1,7 @@
 ﻿l_english:
+  #Hansa Gov Reform
+    hansa_reform: "Hanseatic Merchant League"
+    hansa_reform_desc: "The Hanseatic Merchant League is a plutocratic republic where wealth and trade dictate the agenda. The ruler is elected from among the most influential merchant families within the state and will have to rely on their support. The Hansa has abandoned the idea of having an army separate from the navy and has put all its troops under the command of the navy, focusing on marines instead of conventional troops."
   #South German Confederation
     SGC: "South German Confederation"
     SGC_ADJ: "South German"

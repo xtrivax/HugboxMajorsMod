@@ -257,34 +257,32 @@ prussian_republic_reform = {
 hansa_reform = {
 	icon = "politician"
 	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_reform = genoa_merchants_reform }
-	}
 	modifiers = {
 		max_absolutism = 10
 		merchants = 1
 		global_manpower_modifier = -1
 		global_sailors_modifier = 1
 		sailors_recovery_speed = 0.5
+		global_sailors = 10000
+		has_marines = yes
+		allowed_marine_fraction = 2
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	legacy_equivalent = merchant_republic
 	potential = {
-		NOT = {
+		OR = {
+			tag = HSA
+			was_tag = HSA
 			AND = {
-				tag = VEN
-				NOT = { map_setup = map_setup_random }
+				is_playing_custom_nation = yes
+				have_had_reform = hansa_reform
 			}
 		}
-		NOT = { has_reform = crown_colony_government }
-		NOT = { has_reform = private_enterprise_colony_government }
-		NOT = { has_reform = self_governing_colony_government }
-		NOT = { has_reform = ambrosian_merchants_republic }
 	}
 	trigger = {
 		OR = {
-			has_reform = merchants_reform
+			has_reform = hansa_reform
 			crown_stronger_than_estate = { estate = all }
 		}
 	}
