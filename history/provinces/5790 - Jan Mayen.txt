@@ -1,8 +1,8 @@
-owner = JMN
-controller = JMN
-add_core = JMN
-culture = jan_mayenese
-religion = bear_pagan_reformed
+owner = NOR
+controller = NOR
+add_core = NOR
+culture = norwegian
+religion = catholic
 base_tax = 3
 base_production = 3
 trade_goods = fish
