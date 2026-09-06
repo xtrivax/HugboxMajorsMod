@@ -5,8 +5,8 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			NOT = { 
-				tag = SGC
-				was_tag = SGC
+				tag = GHL
+				was_tag = GHL
 			 }
 			primary_culture = greek
 			religion = hellenism

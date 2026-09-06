@@ -3333,6 +3333,14 @@ pagan = {
 			blessing_of_Hestia
 			blessing_of_Dioskouroi
 		}
+
+		on_convert = {
+			change_religion = hellenism
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}	
 		
 		heretic = { Heretic_Hellenists }	
 		harmonized_modifier = harmonized_pagan
