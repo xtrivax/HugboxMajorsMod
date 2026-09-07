@@ -9,6 +9,7 @@ capital = 45	# Lübeck
 historical_friend = HAM #Hamburg
 historical_friend = BRE #Bremen
 historical_friend = RIG #Riga
+elector = yes
 
 1444.11.11 = {
 	monarch = {
