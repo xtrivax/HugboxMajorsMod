@@ -938,9 +938,17 @@ maritime_ideas = {
 		mercantilism_cost = -0.1
 	}
 	sea_hawks = {
-		fire_damage_received = -0.10
-		fire_damage = 0.10
-		is_marine_modifier = yes
+		global_sailors_modifier = 0.05
+		effect = {
+			add_country_modifier = {
+            	name = "musket_drilled_marines"
+				hidden = no
+        	}
+		}
+		removed_effect = {
+			remove_country_modifier = "musket_drilled_marines"
+		}
+
 	}
 	naval_fighting_instruction = {
 		blockade_efficiency = 0.5

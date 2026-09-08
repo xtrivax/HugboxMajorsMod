@@ -1,0 +1,126 @@
+###########################################
+# Flavor Events for Hellenic League
+#
+# Copied and fucked up by Kvaz
+###########################################
+
+
+country_event = {
+	id = MEE_Hellenic_Events.2
+	title = MEE_Hellenic_Events.2.t
+	desc = MEE_Hellenic_Events.2.d
+	picture = {
+		picture = CONSTANTINOPLE_eventPicture
+		trigger = {
+			has_dlc = "King of Kings"
+		}
+	}
+	picture = {
+		picture = CITY_VIEW_eventPicture
+		trigger = {
+			not = { has_dlc = "King of Kings" }
+		}
+	}
+	
+	is_triggered_only = yes 
+	
+	major = yes
+	major_trigger = {
+		OR = {
+			culture_group = byzantine
+			capital_scope = {
+				region = italy_region
+			}
+		}
+	}
+	
+	goto = 123
+	
+	immediate = {
+		hidden_effect = {
+			pick_best_provinces = {
+				3 = yes
+				scale = higher_development_than
+				global_trigger = "
+					country_or_non_sovereign_subject_holds = ROOT 
+					OR = {
+						area = apulia_area
+						area = calabria_area
+						area = sicily_area
+						area = western_sicily_area
+					}
+					NOT = { province_id = 123 }
+					NOT = { province_id = 122 }
+                    NOT = { province_id = 124 }
+                    NOT = { province_id = 1934 }
+                    NOT = { province_id = 1933 }
+                    NOT = { province_id = 2984 }
+                    NOT = { province_id = 5786 }
+				"
+				scope = every_province
+				event_target_name = "Byz_griko_target"
+			}
+		}
+	}
+	
+	option = {
+		name = MEE_Byzantine_Events.2.a
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		1934 = {
+			change_culture = greek
+			add_base_tax = 1
+			add_base_production = 1
+		}
+		1933 = {
+			change_culture = greek
+			add_base_tax = 1
+			add_base_production = 1
+		}
+		2984 = {
+			change_culture = greek
+			add_base_tax = 1
+			add_base_production = 1
+		}
+		5786 = {
+			change_culture = greek
+			add_base_tax = 1
+			add_base_production = 1
+		}
+		123 = {
+			change_culture = greek
+			add_base_tax = 1
+			add_base_production = 1
+		}
+		122 = {
+			change_culture = greek
+			add_base_tax = 1
+			add_base_production = 1
+		}
+		124 = {
+			change_culture = greek
+			add_base_tax = 1
+			add_base_production = 1
+		}
+		
+		event_target:Byz_griko_target_1 = {
+			change_culture = greek
+		}
+		
+		event_target:Byz_griko_target_2 = {
+			change_culture = greek
+		}
+		
+		event_target:Byz_griko_target_3 = {
+			change_culture = greek
+		}
+		
+		add_years_of_trade_income = {
+			years = 1
+			custom_tooltip = BYZ_add_1_years_of_trade_income
+		}
+	}
+}

@@ -2,6 +2,18 @@
   #Hansa Gov Reform
     hansa_reform: "Hanseatic Merchant League"
     hansa_reform_desc: "The Hanseatic Merchant League is a plutocratic republic where wealth and trade dictate the agenda. The ruler is elected from among the most influential merchant families within the state and will have to rely on their support. The Hansa has abandoned the idea of having an army separate from the navy and has put all its troops under the command of the navy, focusing on marines instead of conventional troops."
-  #Marine 5 Disci and -10% shock dmg Modifier
+  #MModifier for Hansa Marines
     less_damage_marines: "Professional Marines"
     less_damage_marines_desc: "Professional Marines"
+  #Maritime Idea set Marine Modifier
+    musket_drilled_marines: "Marine Fire Drills"
+    musket_drilled_marines_desc: "Marine Fire Drills"
+  #Maritime - Offensive Policy - Modifier
+    stronger_marines: "Well equipped Marines"
+    stronger_marines_desc: "Our Marines take a special place in our navy. To make sure they fight to their full potential they need the best gear."
+  #Maritime Offensive Policy
+    stronger_marines_policy: "20% Marine Combat Ability"
+    stronger_marines_policy_desc: "20% Marine Combat Ability"
+  #Hellenic League Mission Greek Golden Age Modifier
+    greek_golden_age: "A new Hellenic Age"
+    greek_golden_age_desc: "The Greek World has once again reached a hight similar to its Golden Age."

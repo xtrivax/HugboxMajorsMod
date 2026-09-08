@@ -7,3 +7,19 @@ less_damage_marines = {
     shock_damage_received = -0.10
     is_marine_modifier = yes
 }
+
+musket_drilled_marines = {
+    fire_damage_received = -0.10
+	fire_damage = 0.10
+	is_marine_modifier = yes
+}
+
+stronger_marines = {
+    infantry_power = 0.10
+    is_marine_modifier = yes
+}
+
+greek_golden_age = {
+    land_morale = 0.10
+    global_trade_power = 0.15
+}
