@@ -26,13 +26,6 @@ country_decisions = {
 		}
 		effect = {
 			change_religion = hellenism
-			every_owned_province = {
-                    if = {
-                        NOT = { religion = hellenism }
-                        culture = greek
-                    }
-                change_religion = hellenism
-            }
 
 		}
 		ai_will_do = {
