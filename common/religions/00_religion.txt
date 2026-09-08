@@ -28,7 +28,7 @@ christian = {
 		country = {
 			tolerance_own = 1
 			global_heathen_missionary_strength = 0.01
-			land_morale = 0.05
+			land_morale = 0.075
 		}
 		
 		country_as_secondary = {
@@ -3316,7 +3316,7 @@ pagan = {
 			local_missionary_strength = 0.02
 		}
 		
-		holy_sites = { 146 4700 330 358 124 }
+		holy_sites = { 146 4700 410 358 124 }
 		
 		blessings = {
 			blessing_of_Zeus

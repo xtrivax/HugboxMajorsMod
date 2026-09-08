@@ -59,8 +59,8 @@ blessing_of_Demeter = {
 	is_blessing = yes
 
 	modifier = {
-		development_cost = -0.10
-		production_efficiency = 0.05
+		development_cost = -0.05
+		production_efficiency = 0.10
 	}
 	ai_will_do = {
 		factor = 10
@@ -105,7 +105,7 @@ blessing_of_Ares = {
 	is_blessing = yes
 
 	modifier = {
-		infantry_power = 0.15
+		infantry_power = 0.1
         army_tradition_from_battle = 0.5
 	}
 	ai_will_do = {
@@ -186,7 +186,6 @@ blessing_of_Dioskouroi = {
 
 	modifier = {
 		cavalry_power = 0.10
-        shock_damage = 0.10
 	}
 	ai_will_do = {
 		factor = 100

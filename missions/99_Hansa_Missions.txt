@@ -2142,6 +2142,10 @@ lubeck_missions_5 = {
 			add_country_modifier = {
 				name = hsa_safe_seaways_modifier 
 				duration = 7300 
+			}
+			add_country_modifier = {
+				name = stronger_marines
+				hidden = no
 			}	
 			define_advisor = {
 				type = naval_reformer 
