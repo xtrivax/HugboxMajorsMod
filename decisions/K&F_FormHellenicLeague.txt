@@ -70,13 +70,7 @@ country_decisions = {
 			on_change_tag_effect = yes
 			restore_country_name_effect = yes
 			set_global_flag = greek_need_restore_byzantion
-			hidden_effect = { set_government_rank = 2 }
-			south_german_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = GHL
-			}			
+			hidden_effect = { set_government_rank = 3 }	
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -103,9 +97,18 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { tag = BYZ }
+					NOT = { tag = JAP }
 				}
 				swap_non_generic_missions = yes
+			}
+			add_republican_tradition = 100
+			set_capital = 146
+			146 = {
+				change_culture = greek
+				change_religion = hellenism
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 3
 			}
 		}
 		ai_will_do = {

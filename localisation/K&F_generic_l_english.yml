@@ -8,12 +8,15 @@
   #Maritime Idea set Marine Modifier
     musket_drilled_marines: "Marine Fire Drills"
     musket_drilled_marines_desc: "Marine Fire Drills"
-  #Maritime - Offensive Policy - Modifier
+  #Stronger Marines - Modifier
     stronger_marines: "Well equipped Marines"
     stronger_marines_desc: "Our Marines take a special place in our navy. To make sure they fight to their full potential they need the best gear."
-  #Maritime Offensive Policy
-    stronger_marines_policy: "20% Marine Combat Ability"
-    stronger_marines_policy_desc: "20% Marine Combat Ability"
   #Hellenic League Mission Greek Golden Age Modifier
     greek_golden_age: "A new Hellenic Age"
     greek_golden_age_desc: "The Greek World has once again reached a hight similar to its Golden Age."
+  #Hellenic Rebirth
+    hellenic_rebirth: "Rebirth of the Greek Pantheon"
+    hellenic_rebirth_desc: "After our long years of suffering after abandoning our Gods, it is maybe time to embrace the 12 Olympians again."
+  #GHL Mission Reward for Parthenon
+    athenas_grace: "Athenas Grace"
+    athenas_grace_desc: "After restoring the Parthenon to its former glory it seems Athenas Grace has once more been bestowed upon us."

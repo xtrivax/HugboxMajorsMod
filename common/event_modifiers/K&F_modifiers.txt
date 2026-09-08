@@ -23,3 +23,12 @@ greek_golden_age = {
     land_morale = 0.10
     global_trade_power = 0.15
 }
+
+hellenic_rebirth = {
+    global_missionary_strength = 0.1
+    missionaries = 1
+}
+
+athenas_grace = {
+    military_tactics = 0.2
+}

@@ -112,7 +112,7 @@ the_recruiting_act = {
 	}	
 }
 
-stronger_marines_policy = {
+hold_the_weather_gauge = {
 	monarch_power = DIP
 
 	potential = {
@@ -125,16 +125,10 @@ stronger_marines_policy = {
 		full_idea_group = offensive_ideas
 	}
 	
-	global_sailors_modifier = 0.05
+	global_foreign_trade_power = 0.25
 	effect = {
-		add_country_modifier = {
-			name = stronger_marines
-			duration = -1
-			hidden = yes
-		}
 	}
 	removed_effect = {
-		remove_country_modifier = trained_marines_act_marines
 	}
 
 	ai_will_do = {
