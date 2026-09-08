@@ -2062,6 +2062,8 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			NOT = { exists = SMO }
+			NOT = { tag = MOS }
+			NOT = { tag = RUS }
 			ai = no
 			is_colonial_nation = no
 			OR = {

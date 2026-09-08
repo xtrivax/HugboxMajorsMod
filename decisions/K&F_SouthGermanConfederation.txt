@@ -9,6 +9,7 @@ country_decisions = {
 				tag = SGC
 				was_tag = SGC
 			 }
+			NOT = { tag = AUH }
 			OR = {
 				primary_culture = bavarian
 				primary_culture = swiss
@@ -74,9 +75,9 @@ country_decisions = {
 			}
 			is_at_war = no
 			owns_core_province = 1872 # Ulm
-			owns_core_province = 65	# München
+			owns_core_province = 65	# Mï¿½nchen
 			owns_core_province = 75 # Strassburg
-			owns_core_province = 67 # Nürnberg
+			owns_core_province = 67 # Nï¿½rnberg
 			num_of_owned_provinces_with = {
 				is_core = ROOT
 				region = south_german_region
