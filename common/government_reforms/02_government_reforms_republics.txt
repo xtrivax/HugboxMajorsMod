@@ -260,12 +260,13 @@ hansa_reform = {
 	modifiers = {
 		max_absolutism = 10
 		merchants = 1
-		global_manpower_modifier = -1
+		global_manpower_modifier = -0.3
 		global_sailors_modifier = 1
 		sailors_recovery_speed = 0.5
 		global_sailors = 10000
 		has_marines = yes
-		allowed_marine_fraction = 2
+		allowed_marine_fraction = 0.5
+		
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40

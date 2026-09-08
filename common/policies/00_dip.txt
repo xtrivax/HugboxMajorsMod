@@ -125,8 +125,8 @@ hold_the_weather_gauge = {
 		full_idea_group = offensive_ideas
 	}
 	
-	leader_naval_manuever = 1
-	ship_durability = 0.05
+	infantry_power = 0.20
+    is_marine_modifier = yes
 	
 	effect = {}
 	removed_effect = {}
@@ -372,7 +372,7 @@ naval_infrastructure_act = {
 	}
 
 
-	naval_forcelimit_modifier = 0.33
+	naval_forcelimit_modifier = 0.10
 
 	effect = {}
 	removed_effect = {}
