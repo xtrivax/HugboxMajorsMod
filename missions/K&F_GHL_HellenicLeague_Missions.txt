@@ -992,6 +992,7 @@ MEE_BYZ_defense_5 = {
 			
 			add_country_modifier = {
 				name = BYZ_spirit_of_resistance
+				duration = -1
 			}
 		}
 	}
@@ -2439,6 +2440,7 @@ MEE_BYZ_religion_1 = {
 			add_country_modifier = { 
 				name = athenas_grace
 				hidden = no
+				duration = -1
 			}
 		}
 	}

@@ -943,6 +943,7 @@ maritime_ideas = {
 			add_country_modifier = {
             	name = "musket_drilled_marines"
 				hidden = no
+				duration = -1
         	}
 		}
 		removed_effect = {
