@@ -936,6 +936,7 @@ maritime_ideas = {
 	}
 	ships_penny = {
 		mercantilism_cost = -0.1
+		navy_tradition_decay = -0.01
 	}
 	sea_hawks = {
 		global_sailors_modifier = 0.05
